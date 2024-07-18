@@ -63,7 +63,7 @@ const ContactPage = () => {
         </div>
         {/* FORM CONTAINER */}
         <form
-          onSubmit={sendEmail}
+          onSubmit={sendEmail} 
           ref={form}
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
