@@ -69,11 +69,12 @@ const ContactPage = () => {
         >
           <span>Dear Jayden Sisk,</span>
           <textarea
-            rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            
             name="user_message"
+            rows={6}
           />
-          <span>My mail address is:</span>
+          <span>My Email is:</span>
           <input
             name="user_email"
             type="text"

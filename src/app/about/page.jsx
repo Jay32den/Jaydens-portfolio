@@ -3,6 +3,7 @@
 import { motion, useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Brain from "../components/brain";
+// import Resume from '../resumeFile/JaydenSiskResume2024.pdf';
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -18,6 +19,16 @@ const AboutPage = () => {
 
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
+
+  // const downloadFile = (url) => {
+  //   const fileName = url.split("/").pop();
+  //   const aTag = document.createElement("a");
+  //   aTag.href = url;
+  //   aTag.setAttribute("download", fileName);
+  //   document.body.appendChild(aTag);
+  //   aTag.click();
+  //   aTag.remove();
+  // };
 
   return (
     <motion.div
@@ -36,15 +47,28 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+              My name is Jayden Sisk, I am a dedicated software developer with 2 years
+              of experience in crafting innovative designs and solutions for web and mobile applications.
+              Currently, I work as a Perishable Specialist in the Meat Market at H-E-B, where I have been
+              a valued team member for over 8 years. I earned my certification in software development from
+              Southern Careers Institute about 2 years ago.
+              My expertise lies in full-stack development, with a focus on technologies such as JavaScript, SQL, and Next.js. Outside of work, I continually enhance my development skills, enjoy skateboarding, and stay active.
+              Please explore my projects or connect with me on LinkedIn. You can also reach out via the Contact Me page.
+              {/* Hello, my name is Jayden Sisk. I am a devoted software developer with
+              2 years of experience in crafting designs and solutions for web and mobile 
+              applications. Currently, I work as Perishable Specialist in the Meat Market
+              at H-E-B and have been with the company for over 8 years. I attended Southern
+              Careers Institute and got a certification after learning software developer skills.
+              My strenghts lies in full-stack development, specializing in technologies such as 
+              JavaScript, SQL, Next.JS and more. Outside of work, I improve my skills in developing, 
+              do some skateboarding, and stay active. Please check out my projects or connect with me
+              on Linkedin or use the Contact Me page.  */}
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic">
+            {/* <span className="italic">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </span>
+            </span> */}
+
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -69,6 +93,9 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
+
+          {/* <button onClick={() => { downloadFile (Resume)}}>hello</button> */}
+
           {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
@@ -88,6 +115,12 @@ const AboutPage = () => {
             >
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                HTML
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                CSS
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 React.js
@@ -187,11 +220,12 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                  As a freelancer proficient in React.JS and Next.js, I specialize in web
+                  and mobile development frameworks and aim to build strong customer 
+                  relationships.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-blue-400 text-sm font-semibold">
                     2024 - Present
                   </div>
                 </div>
@@ -201,7 +235,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-400 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -217,23 +251,22 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-400 bg-white -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Meat-Market Perishables Specialist
+                    Meat Market Specialist
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Prepared specific cuts of meat, maintained a clean and sanitized work area and equipment,
-                  assisted with inventory and ordering, and built customer relationships to encourage
-                  repeat business.{" "}
+                  Stocked and packaged meat products, maintained a clean and sanitized work area,
+                  trained new partners, and built customer relationships.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-blue-400 text-sm font-semibold">
                     2019 - Present{" "}
                   </div>
                   {/* JOB COMPANY */}
@@ -242,6 +275,7 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
+
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
@@ -275,6 +309,75 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
               </div>
+                {/* EXPERIENCE LIST ITEM */}
+                <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Seafood Representative
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                  Prepared specific cuts of fish, maintained a clean and sanitized work area and equipment,
+                  assisted with inventory and ordering, and built customer relationships.{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2018 - 2019{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    H-E-B
+                  </div>
+                </div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Bagger/Cashier{" "}
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                  Bagged groceries, pushed carts, and operated the cash register.
+                  Handled customer relations and resolved complaints, prioritizing
+                  customer satisfaction.{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2016 - 2018{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Contract
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+              
+              
             </motion.div>
           </div>
         </div>

@@ -11,6 +11,7 @@ const links = [
     { url: "/about", title: "About" },
     { url: "/portfolio", title: "Portfolio" },
     { url: "/contact", title: "Contact" },
+    // { url: "/extra", title: "Extra"},
   ];
 
 const Navbar = () => {
@@ -68,6 +69,8 @@ const Navbar = () => {
             opacity: 1,
           },
         };
+
+
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
        {/* LINKS */}
@@ -92,15 +95,15 @@ const Navbar = () => {
 
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
+        <Link href="https://github.com/Jay32den">
         <Image src='/github.png' alt="" width={24} height={24} />
         </Link>
-        <Link href="">
+        <Link href="https://www.instagram.com/fingerflickingood/">
         <Image src='/instagram.png' alt="" width={24} height={24} />
         </Link>
-        <Link href="">
+        <Link href="https://www.linkedin.com/in/jayden-sisk-b1674a256/">
         <Image src='/linkedin.png' alt="" width={24} height={24} />
-        </Link>
+        </Link>    
       </div>
 
       {/* RESPONSIVE MENU */}

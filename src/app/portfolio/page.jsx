@@ -8,33 +8,42 @@ const items = [
     id: 1,
     color: "from-red-300 to-blue-300",
     title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://m.media-amazon.com/images/M/MV5BYzI0YjYxY2UtNzRjNS00NTZiLTgzMDItNGEzMjU5MmE0ZWJmXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
-    link: "https://lama.dev",
+    desc: "- To establish a premium shopping site offering handcrafted skateboard obstacles meticulously crafted from metal, with precision welding, and made accessible to customers nationwide, leveraging React.JS, Node.JS, and CSS.",
+    img: "/MattfbHome.png",
+    link: 'https://skateboard-obsticle-website.vercel.app/',
+    link2:"https://stackoverflow.com/",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "React.JS Portfolio",
+    desc: " To showcase my professional skills, achievements, and work portfolio through a meticulously designed platform developed using Next.JS, React.JS, and Tailwind CSS.",
+    img: "/Portfolio.png",
+    link: "https://jaydensiskportfolio.vercel.app/",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Google Clone",
+    desc: "To replicate the functionalities of the Google search engine through the implementation of a comprehensive clone using MongoDB, Node.js, React.JS, and Express.JS.",
+    img: "/GoogleHome.png",
+    link: 'https://google-clone-azure-tau.vercel.app/',
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    title: "Chat App",
+    desc: "Facilitating seamless communication by connecting individuals through shared chat room numbers or unique keywords,developed using React.JS, Firebase, and CSS.",
+    img: "/ChatApp.png",
+    link: 'https://chatroom-lovat-psi.vercel.app/',
+  },
+  {
+    id: 5,
+    color: "from-red-300 to-orange-300",
+    title: "Food Truck Template",
+    desc: "Engineered a versatile template utilizing Vite and JSX, tailored specifically for food trucks and restaurants to showcase their schedules, menu offerings, and contact details with seamless functionality and aesthetic appeal.",
+    img: "/Restaurant.png",
+    link: 'https://restaurant-template-two.vercel.app/',
   },
 ];
 
@@ -42,7 +51,7 @@ const PortfolioPage = () => {
   const ref =useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-82%"]);
 
     return (
       <motion.div 
@@ -73,6 +82,9 @@ const PortfolioPage = () => {
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
+                  {/* <Link href={item.link2} className="flex justify-normal">
+                  <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">Git</button>
+                  </Link> */}
                   <Link href={item.link} className="flex justify-end">
                     <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
                   </Link>
