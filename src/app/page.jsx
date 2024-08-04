@@ -45,7 +45,7 @@ const Homepage = () => {
             </button>
             </Link>
             <a href="/JaydenSiskResume2024.pdf" download={""}>
-            <button className="p-4 rounded-lg ring-1 ring-black bg-white">Resume</button>
+            <button className="p-4 rounded-lg ring-1 ring-black bg-white">Download Resume</button>
             </a>
           </div>
         </div>
