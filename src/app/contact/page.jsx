@@ -63,27 +63,29 @@ const ContactPage = () => {
         </div>
         {/* FORM CONTAINER */}
         <form
-          onSubmit={sendEmail} 
-          ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
-        >
-          <span>Dear Jayden Sisk,</span>
-          <textarea
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
-            
-            name="user_message"
-            rows={6}
-          />
-          <span>My Email is:</span>
-          <input
-            name="user_email"
-            type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
-          />
-          <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-            Send
-          </button>
+  onSubmit={sendEmail} 
+  ref={form}
+  className="w-full lg:w-1/2 h-auto lg:h-full bg-red-50 rounded-xl text-xl flex flex-col gap-6 justify-center p-6 lg:p-12"
+>
+  <span className="text-lg lg:text-xl">Dear Jayden Sisk,</span>
+  <textarea
+    className="bg-transparent border-b-2 border-b-black outline-none resize-none w-full"
+    name="user_message"
+    rows={6}
+  />
+  <span className="text-lg lg:text-xl">My Email is:</span>
+  <input
+    name="user_email"
+    type="text"
+    className="bg-transparent border-b-2 border-b-black outline-none w-full"
+  />
+  <span className="text-lg lg:text-xl">Regards</span>
+  <button 
+    type="submit"
+    className="bg-purple-200 rounded font-semibold text-gray-600 p-4 w-full lg:w-auto mt-4"
+  >
+    Send
+  </button>
           {success && (
             <span className="text-green-600 font-semibold">
               Your message has been sent successfully!
