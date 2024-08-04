@@ -3,10 +3,11 @@
 import { motion, useInView, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Brain from "../components/brain";
-// import Resume from '../resumeFile/JaydenSiskResume2024.pdf';
+
 
 const AboutPage = () => {
   const containerRef = useRef();
+
 
   const { scrollYProgress } = useScroll({ container: containerRef });
 
@@ -20,15 +21,6 @@ const AboutPage = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
-  // const downloadFile = (url) => {
-  //   const fileName = url.split("/").pop();
-  //   const aTag = document.createElement("a");
-  //   aTag.href = url;
-  //   aTag.setAttribute("download", fileName);
-  //   document.body.appendChild(aTag);
-  //   aTag.click();
-  //   aTag.remove();
-  // };
 
   return (
     <motion.div
@@ -94,7 +86,6 @@ const AboutPage = () => {
             </motion.svg>
           </div>
 
-          {/* <button onClick={() => { downloadFile (Resume)}}>hello</button> */}
 
           {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>

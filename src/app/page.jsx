@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
+
 const Homepage = () => {
   return (
     <motion.div
@@ -42,6 +44,9 @@ const Homepage = () => {
               Contact Me
             </button>
             </Link>
+            <a href="/JaydenSiskResume2024.pdf" download={""}>
+            <button className="p-4 rounded-lg ring-1 ring-black bg-white">Resume</button>
+            </a>
           </div>
         </div>
       </div>

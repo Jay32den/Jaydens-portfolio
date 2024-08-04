@@ -24,7 +24,7 @@ const Navbar = () => {
           },
           opened: {
             rotate: 45,
-            backgroundColor: "blue",
+            backgroundColor: "white",
           },
         };
         const centerVariants = {
@@ -42,7 +42,7 @@ const Navbar = () => {
           },
           opened: {
             rotate: -45,
-            backgroundColor: "blue",
+            backgroundColor: "white",
           },
         };
       
@@ -84,12 +84,11 @@ const Navbar = () => {
        <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className="text-white mr-1">Jayden</span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
-            Sisk
-          </span>
+
+        <h1 className="text-xl1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-gray-800">
+          Jayden Sisk
+        </h1>
         </Link>
       </div>
 
