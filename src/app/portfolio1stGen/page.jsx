@@ -6,15 +6,22 @@ import Image from "next/image";
 const items = [
   {
     id: 1,
+    color: "from-blue-300 to-yellow-300",
+    title: "Reactghbdghbn Commerce",
+    desc: "Establish a premium shopping site offering handcrafted skateboard obstacles meticulously crafted from metal, with precision welding, and made accessible to customers nationwide, leveraging React.JS, Node.JS, and CSS.",
+    img: "/MattfbHome.png",
+    link: 'https://skateboard-obsticle-website.vercel.app/',
+  },
+  {
+    id: 2,
     color: "from-red-300 to-blue-300",
     title: "React Commerce",
     desc: "Establish a premium shopping site offering handcrafted skateboard obstacles meticulously crafted from metal, with precision welding, and made accessible to customers nationwide, leveraging React.JS, Node.JS, and CSS.",
     img: "/MattfbHome.png",
     link: 'https://skateboard-obsticle-website.vercel.app/',
-    link2:"https://stackoverflow.com/",
   },
   {
-    id: 2,
+    id: 3,
     color: "from-blue-300 to-violet-300",
     title: "React.JS Portfolio",
     desc: "Showcase my professional skills, achievements, and work portfolio through a meticulously designed platform developed using Next.JS, React.JS, and Tailwind CSS.",
@@ -22,7 +29,7 @@ const items = [
     link: "https://jaydensiskportfolio.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     color: "from-violet-300 to-purple-300",
     title: "Google Clone",
     desc: "Replicate the functionalities of the Google search engine through the implementation of a comprehensive clone using MongoDB, Node.js, React.JS, and Express.JS.",
@@ -30,7 +37,7 @@ const items = [
     link: 'https://google-clone-azure-tau.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     color: "from-purple-300 to-red-300",
     title: "Chat App",
     desc: "Facilitating seamless communication by connecting individuals through shared chat room numbers or unique keywords,developed using React.JS, Firebase, and CSS.",
@@ -38,7 +45,7 @@ const items = [
     link: 'https://chatroom-lovat-psi.vercel.app/',
   },
   {
-    id: 5,
+    id: 6,
     color: "from-red-300 to-orange-300",
     title: "Food Truck Template",
     desc: "Engineered a versatile template utilizing Vite and JSX, tailored specifically for food trucks and restaurants to showcase their schedules, menu offerings, and contact details with seamless functionality and aesthetic appeal.",

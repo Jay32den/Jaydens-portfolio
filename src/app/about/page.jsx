@@ -39,7 +39,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              My name is Jayden Sisk, I am a dedicated software developer with 2 years
+              My name is Jayden Sisk and I am a dedicated software developer with 2 years
               of experience in crafting innovative designs and solutions for web and mobile applications.
               Currently, I work as a Perishable Specialist in the Meat Market at H-E-B, where I have been
               a valued team member for over 8 years. I earned my certification in software development from

@@ -4,11 +4,12 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
+  const form = useRef();
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Say Hello";
 
-  const form = useRef();
+  
 
   const sendEmail = (e) => {
     e.preventDefault();

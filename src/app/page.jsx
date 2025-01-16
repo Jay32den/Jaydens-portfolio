@@ -44,7 +44,7 @@ const Homepage = () => {
               Contact Me
             </button>
             </Link>
-            <a href="/JaydenSiskResume2024.pdf" download={""}>
+            <a href="/JaydenSiskResume (1).pdf" download={"Jayden Sisk Resume"}>
             <button className="p-4 rounded-lg ring-1 ring-black">Download Resume</button>
             </a>
           </div>
