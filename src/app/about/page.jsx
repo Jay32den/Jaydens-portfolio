@@ -68,7 +68,6 @@ const AboutPage = () => {
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
               viewBox="0 0 24 24"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
               width={50}
               height={50}
             >
@@ -353,7 +352,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Contract
+                    H-E-B
                   </div>
                 </div>
                 {/* CENTER */}
